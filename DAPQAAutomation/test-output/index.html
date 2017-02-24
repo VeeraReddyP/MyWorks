@@ -1,0 +1,1770 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 17 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">18 methods, 17 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ge.DAP.APItestscipts.SearchApi" hash-for-method="searchby_AssetId(9, assets/search?sourceKey=abc, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756...)">searchby_AssetId(9, assets/search?sourceKey=abc, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ge.DAP.APItestscipts.SearchApi" hash-for-method="searchby_AssetId(5, assets/search?sourceKey=*, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f1...)">searchby_AssetId(5, assets/search?sourceKey=*, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f1...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ge.DAP.APItestscipts.SearchApi" hash-for-method="searchby_AssetId(10, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e3850016b410-11f7-43f8-ba3a-0d347392e385...)">searchby_AssetId(10, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e3850016b410-11f7-43f8-ba3a-0d347392e385...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ge.DAP.APItestscipts.SearchApi" hash-for-method="searchby_AssetId(7, assets/search?sourceKey=!, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f1...)">searchby_AssetId(7, assets/search?sourceKey=!, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f1...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ge.DAP.APItestscipts.SearchApi" hash-for-method="searchby_AssetId(11, assets/search?sourceKey=0016b410&amp;11f7&amp;43f8&amp;ba3a&amp;0d347392e385, Business-Unit=power,Predix-Zone-Id...)">searchby_AssetId(11, assets/search?sourceKey=0016b410&11f7&43f8&ba3a&0d347392e385, Business-Unit=power,Predix-Zone-Id...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ge.DAP.APItestscipts.SearchApi" hash-for-method="searchby_AssetId(14, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=Power,Predix-Zone-I=...)">searchby_AssetId(14, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=Power,Predix-Zone-I=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ge.DAP.APItestscipts.SearchApi" hash-for-method="searchby_AssetId(4, assets/search?sourceKey=+, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f1...)">searchby_AssetId(4, assets/search?sourceKey=+, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f1...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ge.DAP.APItestscipts.SearchApi" hash-for-method="searchby_AssetId(6, assets/search?sourceKey=@, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f1...)">searchby_AssetId(6, assets/search?sourceKey=@, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f1...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ge.DAP.APItestscipts.SearchApi" hash-for-method="searchby_AssetId(3, assets/search?sourceKey=?, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f1...)">searchby_AssetId(3, assets/search?sourceKey=?, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f1...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ge.DAP.APItestscipts.SearchApi" hash-for-method="searchby_AssetId(1, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=power,Predix-Zone-Id=...)">searchby_AssetId(1, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=power,Predix-Zone-Id=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ge.DAP.APItestscipts.SearchApi" hash-for-method="searchby_AssetId(2, assets/search?sourceKey=0023d344-, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4...)">searchby_AssetId(2, assets/search?sourceKey=0023d344-, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ge.DAP.APItestscipts.SearchApi" hash-for-method="searchby_AssetId(8, assets/search?sourceKey=, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f16...)">searchby_AssetId(8, assets/search?sourceKey=, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f16...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ge.DAP.APItestscipts.SearchApi" hash-for-method="searchby_AssetId(15, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=ower,Predix-Zone-Id=...)">searchby_AssetId(15, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=ower,Predix-Zone-Id=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ge.DAP.APItestscipts.SearchApi" hash-for-method="searchby_AssetId(13, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=Power,Predix-Zone-Id...)">searchby_AssetId(13, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=Power,Predix-Zone-Id...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ge.DAP.APItestscipts.SearchApi" hash-for-method="searchby_AssetId(12, assets/search?sourceKey=00*, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c406675...)">searchby_AssetId(12, assets/search?sourceKey=00*, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c406675...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ge.DAP.APItestscipts.SearchApi" hash-for-method="searchby_AssetId(16, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=power,Predix-Zone-Id...)">searchby_AssetId(16, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=power,Predix-Zone-Id...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ge.DAP.APItestscipts.SearchApi" hash-for-method="searchby_AssetId(17, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=power,Predix-Zone-Id...)">searchby_AssetId(17, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=power,Predix-Zone-Id...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ge.DAP.APItestscipts.SearchApi" hash-for-method="searchby_AssetId(18, sites/search?sourceKey=0023d344-6e16-4ae3-9320-c84411bf78a8, Business-Unit=power,Predix-Zone-Id=...)">searchby_AssetId(18, sites/search?sourceKey=0023d344-6e16-4ae3-9320-c84411bf78a8, Business-Unit=power,Predix-Zone-Id=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.ge.DAP.APItestscipts.SearchApi</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchby_AssetId(9, assets/search?sourceKey=abc, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756...)">
+                  </a> <!-- searchby_AssetId(9, assets/search?sourceKey=abc, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756...) -->
+                  <span class="method-name">searchby_AssetId</span>
+                  <span class="parameters">(9, assets/search?sourceKey=abc, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f16,Content-Type=application/json,Authorization= , https://dap-go-service-v1.run.aws-usw02-pr.ice.predix.io/assets/search?sourceKey=abc, 200)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 200 expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+<br/> java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 200 expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:370)<br>com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)<br>com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)<br>
+</div> <!-- stack-trace -->
+                  <em>
+(Testing the search by asset_ID API )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchby_AssetId(5, assets/search?sourceKey=*, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f1...)">
+                  </a> <!-- searchby_AssetId(5, assets/search?sourceKey=*, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f1...) -->
+                  <span class="method-name">searchby_AssetId</span>
+                  <span class="parameters">(5, assets/search?sourceKey=*, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f16,Content-Type=application/json,Authorization= , https://dap-go-service-v1.run.aws-usw02-pr.ice.predix.io/assets/search?sourceKey=*, 200)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 200 expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+<br/> java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 200 expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:370)<br>com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)<br>com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)<br>
+</div> <!-- stack-trace -->
+                  <em>
+(Testing the search by asset_ID API )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchby_AssetId(10, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e3850016b410-11f7-43f8-ba3a-0d347392e385...)">
+                  </a> <!-- searchby_AssetId(10, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e3850016b410-11f7-43f8-ba3a-0d347392e385...) -->
+                  <span class="method-name">searchby_AssetId</span>
+                  <span class="parameters">(10, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e3850016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f16,Content-Type=application/json,Authorization= , https://dap-go-service-v1.run.aws-usw02-pr.ice.predix.io/assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e3850016b410-11f7-43f8-ba3a-0d347392e385, 200)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 200 expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+<br/> java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 200 expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:370)<br>com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)<br>com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)<br>
+</div> <!-- stack-trace -->
+                  <em>
+(Testing the search by asset_ID API )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchby_AssetId(7, assets/search?sourceKey=!, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f1...)">
+                  </a> <!-- searchby_AssetId(7, assets/search?sourceKey=!, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f1...) -->
+                  <span class="method-name">searchby_AssetId</span>
+                  <span class="parameters">(7, assets/search?sourceKey=!, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f16,Content-Type=application/json,Authorization= , https://dap-go-service-v1.run.aws-usw02-pr.ice.predix.io/assets/search?sourceKey=!, 200)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 200 expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+<br/> java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 200 expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:370)<br>com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)<br>com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)<br>
+</div> <!-- stack-trace -->
+                  <em>
+(Testing the search by asset_ID API )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchby_AssetId(11, assets/search?sourceKey=0016b410&amp;11f7&amp;43f8&amp;ba3a&amp;0d347392e385, Business-Unit=power,Predix-Zone-Id...)">
+                  </a> <!-- searchby_AssetId(11, assets/search?sourceKey=0016b410&11f7&43f8&ba3a&0d347392e385, Business-Unit=power,Predix-Zone-Id...) -->
+                  <span class="method-name">searchby_AssetId</span>
+                  <span class="parameters">(11, assets/search?sourceKey=0016b410&11f7&43f8&ba3a&0d347392e385, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f16,Content-Type=application/json,Authorization= , https://dap-go-service-v1.run.aws-usw02-pr.ice.predix.io/assets/search?sourceKey=0016b410&11f7&43f8&ba3a&0d347392e385, 200)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 200 expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+<br/> java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 200 expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:370)<br>com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)<br>com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)<br>
+</div> <!-- stack-trace -->
+                  <em>
+(Testing the search by asset_ID API )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchby_AssetId(14, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=Power,Predix-Zone-I=...)">
+                  </a> <!-- searchby_AssetId(14, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=Power,Predix-Zone-I=...) -->
+                  <span class="method-name">searchby_AssetId</span>
+                  <span class="parameters">(14, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=Power,Predix-Zone-I=6320dde5-5bfb-4d20-973c-3c4066756f16,Content-Type=application/json,Authorization= , https://dap-go-service-v1.run.aws-usw02-pr.ice.predix.io/assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, 428)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 428 expected [428] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+<br/> java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 428 expected [428] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:370)<br>com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)<br>com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)<br>
+</div> <!-- stack-trace -->
+                  <em>
+(Testing the search by asset_ID API )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchby_AssetId(4, assets/search?sourceKey=+, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f1...)">
+                  </a> <!-- searchby_AssetId(4, assets/search?sourceKey=+, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f1...) -->
+                  <span class="method-name">searchby_AssetId</span>
+                  <span class="parameters">(4, assets/search?sourceKey=+, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f16,Content-Type=application/json,Authorization= , https://dap-go-service-v1.run.aws-usw02-pr.ice.predix.io/assets/search?sourceKey=+, 200)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 200 expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+<br/> java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 200 expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:370)<br>com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)<br>com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)<br>
+</div> <!-- stack-trace -->
+                  <em>
+(Testing the search by asset_ID API )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchby_AssetId(6, assets/search?sourceKey=@, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f1...)">
+                  </a> <!-- searchby_AssetId(6, assets/search?sourceKey=@, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f1...) -->
+                  <span class="method-name">searchby_AssetId</span>
+                  <span class="parameters">(6, assets/search?sourceKey=@, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f16,Content-Type=application/json,Authorization= , https://dap-go-service-v1.run.aws-usw02-pr.ice.predix.io/assets/search?sourceKey=@, 200)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 200 expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+<br/> java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 200 expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:370)<br>com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)<br>com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)<br>
+</div> <!-- stack-trace -->
+                  <em>
+(Testing the search by asset_ID API )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchby_AssetId(3, assets/search?sourceKey=?, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f1...)">
+                  </a> <!-- searchby_AssetId(3, assets/search?sourceKey=?, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f1...) -->
+                  <span class="method-name">searchby_AssetId</span>
+                  <span class="parameters">(3, assets/search?sourceKey=?, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f16,Content-Type=application/json,Authorization= , https://dap-go-service-v1.run.aws-usw02-pr.ice.predix.io/assets/search?sourceKey=?, 200)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 200 expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+<br/> java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 200 expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:370)<br>com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)<br>com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)<br>
+</div> <!-- stack-trace -->
+                  <em>
+(Testing the search by asset_ID API )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchby_AssetId(1, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=power,Predix-Zone-Id=...)">
+                  </a> <!-- searchby_AssetId(1, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=power,Predix-Zone-Id=...) -->
+                  <span class="method-name">searchby_AssetId</span>
+                  <span class="parameters">(1, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f16,Content-Type=application/json,Authorization= , https://dap-go-service-v1.run.aws-usw02-pr.ice.predix.io/assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, 200)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 200 expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+<br/> java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 200 expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:370)<br>com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)<br>com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)<br>
+</div> <!-- stack-trace -->
+                  <em>
+(Testing the search by asset_ID API )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchby_AssetId(2, assets/search?sourceKey=0023d344-, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4...)">
+                  </a> <!-- searchby_AssetId(2, assets/search?sourceKey=0023d344-, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4...) -->
+                  <span class="method-name">searchby_AssetId</span>
+                  <span class="parameters">(2, assets/search?sourceKey=0023d344-, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f16,Content-Type=application/json,Authorization= , https://dap-go-service-v1.run.aws-usw02-pr.ice.predix.io/assets/search?sourceKey=0023d344-, 200)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 200 expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+<br/> java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 200 expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:370)<br>com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)<br>com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)<br>
+</div> <!-- stack-trace -->
+                  <em>
+(Testing the search by asset_ID API )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchby_AssetId(8, assets/search?sourceKey=, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f16...)">
+                  </a> <!-- searchby_AssetId(8, assets/search?sourceKey=, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f16...) -->
+                  <span class="method-name">searchby_AssetId</span>
+                  <span class="parameters">(8, assets/search?sourceKey=, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f16,Content-Type=application/json,Authorization= , https://dap-go-service-v1.run.aws-usw02-pr.ice.predix.io/assets/search?sourceKey=, 200)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 200 expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+<br/> java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 200 expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:370)<br>com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)<br>com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)<br>
+</div> <!-- stack-trace -->
+                  <em>
+(Testing the search by asset_ID API )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchby_AssetId(15, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=ower,Predix-Zone-Id=...)">
+                  </a> <!-- searchby_AssetId(15, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=ower,Predix-Zone-Id=...) -->
+                  <span class="method-name">searchby_AssetId</span>
+                  <span class="parameters">(15, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=ower,Predix-Zone-Id=320dde5-5bfb-4d20-973c-3c4066756f16,Content-Type=application/json,Authorization= , https://dap-go-service-v1.run.aws-usw02-pr.ice.predix.io/assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, 400)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 400 expected [400] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+<br/> java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 400 expected [400] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:370)<br>com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)<br>com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)<br>
+</div> <!-- stack-trace -->
+                  <em>
+(Testing the search by asset_ID API )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchby_AssetId(13, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=Power,Predix-Zone-Id...)">
+                  </a> <!-- searchby_AssetId(13, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=Power,Predix-Zone-Id...) -->
+                  <span class="method-name">searchby_AssetId</span>
+                  <span class="parameters">(13, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=Power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f16,Content-Type=application/json,Authorization= , https://dap-go-service-v1.run.aws-usw02-pr.ice.predix.io/assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, 400)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 400 expected [400] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+<br/> java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 400 expected [400] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:370)<br>com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)<br>com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)<br>
+</div> <!-- stack-trace -->
+                  <em>
+(Testing the search by asset_ID API )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchby_AssetId(12, assets/search?sourceKey=00*, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c406675...)">
+                  </a> <!-- searchby_AssetId(12, assets/search?sourceKey=00*, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c406675...) -->
+                  <span class="method-name">searchby_AssetId</span>
+                  <span class="parameters">(12, assets/search?sourceKey=00*, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f16,Content-Type=application/json,Authorization= , https://dap-go-service-v1.run.aws-usw02-pr.ice.predix.io/assets/search?sourceKey=00*, 200)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 200 expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+<br/> java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 200 expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:370)<br>com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)<br>com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)<br>
+</div> <!-- stack-trace -->
+                  <em>
+(Testing the search by asset_ID API )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchby_AssetId(16, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=power,Predix-Zone-Id...)">
+                  </a> <!-- searchby_AssetId(16, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=power,Predix-Zone-Id...) -->
+                  <span class="method-name">searchby_AssetId</span>
+                  <span class="parameters">(16, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f16,Content-Type=application/json,Authorization=eyJhbGciOiJSUzI1NiIsImtpZCI6ImxlZ2FjeS10b2tlbi1rZXkiLCJ0eXAiOiJKV1QifQ.eyJqdGkiOiI0NTFmZWRmYmUxYTc0MGY1OTM0MzBlOWQ5YjA0NzFiNSIsInN1YiI6ImRhcF9jbGllbnRfaWQiLCJzY29wZSI6WyJ0aW1lc2VyaWVzLnpvbmVzLjJkZjBmYTJkLWNmMGQtNDRkNi05YTQ0LTFmMzRmNmYwNDhiYS5pbmdlc3QiLCJ1YWEucmVzb3VyY2UiLCJwcmVkaXgtYXNzZXQuem9uZXMuNjMyMGRkZTUtNWJmYi00ZDIwLTk3M2MtM2M0MDY2NzU2ZjE2LnVzZXIiLCJ0aW1lc2VyaWVzLnpvbmVzLjJkZjBmYTJkLWNmMGQtNDRkNi05YTQ0LTFmMzRmNmYwNDhiYS51c2VyIiwiY2xpZW50LnJlYWQiLCJ0aW1lc2VyaWVzLnpvbmVzLmQ3OGRkZDc5LWEzOTYtNGI4OC1iMDZjLWY2NDI4YTNlMWM3Mi5xdWVyeSIsInNjaW0ucmVhZCIsInRpbWVzZXJpZXMuem9uZXMuZDc4ZGRkNzktYTM5Ni00Yjg4LWIwNmMtZjY0MjhhM2UxYzcyLmluZ2VzdCIsInRpbWVzZXJpZXMuem9uZXMuMmRmMGZhMmQtY2YwZC00NGQ2LTlhNDQtMWYzNGY2ZjA0OGJhLnF1ZXJ5IiwidGltZXNlcmllcy56b25lcy5kNzhkZGQ3OS1hMzk2LTRiODgtYjA2Yy1mNjQyOGEzZTFjNzIudXNlciIsImNsaWVudHMud3JpdGUiLCJzY2ltLndyaXRlIiwicHJlZGl4LWFjcy56b25lcy5jNGRmNjhkOC01ZDdmLTQwNGQtYjE1Ni0zOWNhYzk0NDJmNDcudXNlciJdLCJjbGllbnRfaWQiOiJkYXBfY2xpZW50X2lkIiwiY2lkIjoiZGFwX2NsaWVudF9pZCIsImF6cCI6ImRhcF9jbGllbnRfaWQiLCJncmFudF90eXBlIjoiY2xpZW50X2NyZWRlbnRpYWxzIiwicmV2X3NpZyI6IjhkZTY5N2Y0IiwiaWF0IjoxNDg2NDQ2MTAxLCJleHAiOjE0ODY0ODkzMDEsImlzcyI6Imh0dHBzOi8vMzdiMjc0NmMtYmIyMy00Njg4LTg0OTQtODBjNGVmYzUxY2ZlLnByZWRpeC11YWEucnVuLmF3cy11c3cwMi1wci5pY2UucHJlZGl4LmlvL29hdXRoL3Rva2VuIiwiemlkIjoiMzdiMjc0NmMtYmIyMy00Njg4LTg0OTQtODBjNGVmYzUxY2ZlIiwiYXVkIjpbInNjaW0iLCJjbGllbnRzIiwidWFhIiwidGltZXNlcmllcy56b25lcy5kNzhkZGQ3OS1hMzk2LTRiODgtYjA2Yy1mNjQyOGEzZTFjNzIiLCJwcmVkaXgtYXNzZXQuem9uZXMuNjMyMGRkZTUtNWJmYi00ZDIwLTk3M2MtM2M0MDY2NzU2ZjE2IiwiY2xpZW50IiwiZGFwX2NsaWVudF9pZCIsInRpbWVzZXJpZXMuem9uZXMuMmRmMGZhMmQtY2YwZC00NGQ2LTlhNDQtMWYzNGY2ZjA0OGJhIiwicHJlZGl4LWFjcy56b25lcy5jNGRmNjhkOC01ZDdmLTQwNGQtYjE1Ni0zOWNhYzk0NDJmNDciXX0.CqZ-VoaIYYGiS8Kb_tDbX6U70TXggpOVQAIY66j0eWOGAp5FeNFi2R3enXnSZJL0QtSZgeYP5dzWSn7tDOaQl8d-9xQpgCs8O84ztVjSYJ-wuJfPdORo7GnJVglWgNtsnKSkfxX-3UOZdC6ESAjNYPUGrL9cysrPmxMA6R5RvNbFJ8p327xMHv-LPaiOWGd2123_nfpyLBd3oXPk-X_bvyz3y8uM0sRikNCLPVY3IcQnMR-tdumU5E2sIzw0zN9ZKxgscxh7bKcEg-CSTF6okeWfcPhX5jaHbmJjg02OVGVljs7Aki8YaSi30blf1d_f1Xd-YF-, https://dap-go-service-v1.run.aws-usw02-pr.ice.predix.io/assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, 400)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 400 expected [400] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+<br/> java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 400 expected [400] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:370)<br>com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)<br>com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)<br>
+</div> <!-- stack-trace -->
+                  <em>
+(Testing the search by asset_ID API )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchby_AssetId(17, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=power,Predix-Zone-Id...)">
+                  </a> <!-- searchby_AssetId(17, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=power,Predix-Zone-Id...) -->
+                  <span class="method-name">searchby_AssetId</span>
+                  <span class="parameters">(17, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f16,Content-Type=application/json,Authorization=eyJhbGciOiJSUzI1NiIsImtpZCI6ImxlZ2FjeS10b2tlbi1rZXkiLCJ0eXAiOiJKV1QifQ.eyJqdGkiOiJjNjNiOGM2MDcwM2Q0OGU0OTJmMjVkNjYxYThmYzAyNyIsInN1YiI6ImRhcF9jbGllbnRfaWQiLCJzY29wZSI6WyJ0aW1lc2VyaWVzLnpvbmVzLjJkZjBmYTJkLWNmMGQtNDRkNi05YTQ0LTFmMzRmNmYwNDhiYS5pbmdlc3QiLCJ1YWEucmVzb3VyY2UiLCJwcmVkaXgtYXNzZXQuem9uZXMuNjMyMGRkZTUtNWJmYi00ZDIwLTk3M2MtM2M0MDY2NzU2ZjE2LnVzZXIiLCJ0aW1lc2VyaWVzLnpvbmVzLjJkZjBmYTJkLWNmMGQtNDRkNi05YTQ0LTFmMzRmNmYwNDhiYS51c2VyIiwiY2xpZW50LnJlYWQiLCJ0aW1lc2VyaWVzLnpvbmVzLmQ3OGRkZDc5LWEzOTYtNGI4OC1iMDZjLWY2NDI4YTNlMWM3Mi5xdWVyeSIsInNjaW0ucmVhZCIsInRpbWVzZXJpZXMuem9uZXMuZDc4ZGRkNzktYTM5Ni00Yjg4LWIwNmMtZjY0MjhhM2UxYzcyLmluZ2VzdCIsInRpbWVzZXJpZXMuem9uZXMuMmRmMGZhMmQtY2YwZC00NGQ2LTlhNDQtMWYzNGY2ZjA0OGJhLnF1ZXJ5IiwidGltZXNlcmllcy56b25lcy5kNzhkZGQ3OS1hMzk2LTRiODgtYjA2Yy1mNjQyOGEzZTFjNzIudXNlciIsImNsaWVudHMud3JpdGUiLCJzY2ltLndyaXRlIiwicHJlZGl4LWFjcy56b25lcy5jNGRmNjhkOC01ZDdmLTQwNGQtYjE1Ni0zOWNhYzk0NDJmNDcudXNlciJdLCJjbGllbnRfaWQiOiJkYXBfY2xpZW50X2lkIiwiY2lkIjoiZGFwX2NsaWVudF9pZCIsImF6cCI6ImRhcF9jbGllbnRfaWQiLCJncmFudF90eXBlIjoiY2xpZW50X2NyZWRlbnRpYWxzIiwicmV2X3NpZyI6IjhkZTY5N2Y0IiwiaWF0IjoxNDg1MjM3Njg3LCJleHAiOjE0ODUyODA4ODcsImlzcyI6Imh0dHBzOi8vMzdiMjc0NmMtYmIyMy00Njg4LTg0OTQtODBjNGVmYzUxY2ZlLnByZWRpeC11YWEucnVuLmF3cy11c3cwMi1wci5pY2UucHJlZGl4LmlvL29hdXRoL3Rva2VuIiwiemlkIjoiMzdiMjc0NmMtYmIyMy00Njg4LTg0OTQtODBjNGVmYzUxY2ZlIiwiYXVkIjpbInNjaW0iLCJjbGllbnRzIiwidWFhIiwidGltZXNlcmllcy56b25lcy5kNzhkZGQ3OS1hMzk2LTRiODgtYjA2Yy1mNjQyOGEzZTFjNzIiLCJwcmVkaXgtYXNzZXQuem9uZXMuNjMyMGRkZTUtNWJmYi00ZDIwLTk3M2MtM2M0MDY2NzU2ZjE2IiwiY2xpZW50IiwiZGFwX2NsaWVudF9pZCIsInRpbWVzZXJpZXMuem9uZXMuMmRmMGZhMmQtY2YwZC00NGQ2LTlhNDQtMWYzNGY2ZjA0OGJhIiwicHJlZGl4LWFjcy56b25lcy5jNGRmNjhkOC01ZDdmLTQwNGQtYjE1Ni0zOWNhYzk0NDJmNDciXX0.Tqk-x2Aik28mNJdpGjtsv3_y7nL20RUC2bmSYDlFFIchxSwXlWYKZLKitiKJR-OUka1q7hr8ZRgWpyndvu6HJZu5RqdDuYEvNKFmXEsx5f5dOaUYSmSu7a7v3yC8wRI_VOIPs4BvtWu86R0hpvwsHbgAGCbUgub59hD3SyKkvk524GVzwAuYmQjJ2WnQiCFDw0LgEOWLiRpFhuD4wvMPwV7kOmRCliCVpzhEkgo_gxTicpZyGMrrr1MUxMDjKTeyeh5ldi5TnSaP9Li5T9TfzChglEk9lPKQ5f4YXZE41JZH_JtAZ-sfSSLnNivbhOgz7Qt_HNB2yGY9_Lm6JOInqA, https://dap-go-service-v1.run.aws-usw02-pr.ice.predix.io/assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, 400)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 400 expected [400] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+<br/> java.lang.AssertionError: Oops!!!! Actual and Expected values doesnt match 404 400 expected [400] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)
+	at com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:370)<br>com.ge.DAP.actionEngines.ApiHanddler.validate_equal(ApiHanddler.java:246)<br>com.ge.DAP.APItestscipts.SearchApi.searchby_AssetId(SearchApi.java:41)<br>sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)<br>
+</div> <!-- stack-trace -->
+                  <em>
+(Testing the search by asset_ID API )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ge.DAP.APItestscipts.SearchApi</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchby_AssetId(18, sites/search?sourceKey=0023d344-6e16-4ae3-9320-c84411bf78a8, Business-Unit=power,Predix-Zone-Id=...)">
+                  </a> <!-- searchby_AssetId(18, sites/search?sourceKey=0023d344-6e16-4ae3-9320-c84411bf78a8, Business-Unit=power,Predix-Zone-Id=...) -->
+                  <span class="method-name">searchby_AssetId</span>
+                  <span class="parameters">(18, sites/search?sourceKey=0023d344-6e16-4ae3-9320-c84411bf78a8, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f16,Content-Type=application/json,Authorization= , https://dap-go-service-v1.run.aws-usw02-pr.ice.predix.io/sites/search?sourceKey=0023d344-6e16-4ae3-9320-c84411bf78a8, 200)</span>
+                  <em>
+(Testing the search by asset_ID API )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/private/var/folders/zs/qnxk_xhd1g9g27cmd_clkmlc0000gn/T/testng-eclipse--1970033078/testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ge.DAP.APItestscipts.SearchApi&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(18);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'searchby_AssetId')
+data.setCell(0, 2, 'com.ge.DAP.APItestscipts.SearchApi')
+data.setCell(0, 3, 3005);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'searchby_AssetId')
+data.setCell(1, 2, 'com.ge.DAP.APItestscipts.SearchApi')
+data.setCell(1, 3, 2968);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'searchby_AssetId')
+data.setCell(2, 2, 'com.ge.DAP.APItestscipts.SearchApi')
+data.setCell(2, 3, 2922);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'searchby_AssetId')
+data.setCell(3, 2, 'com.ge.DAP.APItestscipts.SearchApi')
+data.setCell(3, 3, 2921);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'searchby_AssetId')
+data.setCell(4, 2, 'com.ge.DAP.APItestscipts.SearchApi')
+data.setCell(4, 3, 2845);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'searchby_AssetId')
+data.setCell(5, 2, 'com.ge.DAP.APItestscipts.SearchApi')
+data.setCell(5, 3, 2716);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'searchby_AssetId')
+data.setCell(6, 2, 'com.ge.DAP.APItestscipts.SearchApi')
+data.setCell(6, 3, 2715);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'searchby_AssetId')
+data.setCell(7, 2, 'com.ge.DAP.APItestscipts.SearchApi')
+data.setCell(7, 3, 2707);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'searchby_AssetId')
+data.setCell(8, 2, 'com.ge.DAP.APItestscipts.SearchApi')
+data.setCell(8, 3, 2704);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'searchby_AssetId')
+data.setCell(9, 2, 'com.ge.DAP.APItestscipts.SearchApi')
+data.setCell(9, 3, 2658);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'searchby_AssetId')
+data.setCell(10, 2, 'com.ge.DAP.APItestscipts.SearchApi')
+data.setCell(10, 3, 2618);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'searchby_AssetId')
+data.setCell(11, 2, 'com.ge.DAP.APItestscipts.SearchApi')
+data.setCell(11, 3, 2586);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'searchby_AssetId')
+data.setCell(12, 2, 'com.ge.DAP.APItestscipts.SearchApi')
+data.setCell(12, 3, 2528);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'searchby_AssetId')
+data.setCell(13, 2, 'com.ge.DAP.APItestscipts.SearchApi')
+data.setCell(13, 3, 2504);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'searchby_AssetId')
+data.setCell(14, 2, 'com.ge.DAP.APItestscipts.SearchApi')
+data.setCell(14, 3, 2465);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'searchby_AssetId')
+data.setCell(15, 2, 'com.ge.DAP.APItestscipts.SearchApi')
+data.setCell(15, 3, 2461);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'searchby_AssetId')
+data.setCell(16, 2, 'com.ge.DAP.APItestscipts.SearchApi')
+data.setCell(16, 3, 2412);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'searchby_AssetId')
+data.setCell(17, 2, 'com.ge.DAP.APItestscipts.SearchApi')
+data.setCell(17, 3, 2364);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 48 seconds</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ge.DAP.APItestscipts.SearchApi</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">hc_close</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchby_AssetId(1, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=power,Predix-Zone-Id=...)</span>
+                <span class="method-start">121 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchby_AssetId(2, assets/search?sourceKey=0023d344-, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4...)</span>
+                <span class="method-start">3128 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchby_AssetId(3, assets/search?sourceKey=?, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f1...)</span>
+                <span class="method-start">5845 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchby_AssetId(4, assets/search?sourceKey=+, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f1...)</span>
+                <span class="method-start">8550 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchby_AssetId(5, assets/search?sourceKey=*, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f1...)</span>
+                <span class="method-start">11169 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchby_AssetId(6, assets/search?sourceKey=@, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f1...)</span>
+                <span class="method-start">13674 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchby_AssetId(7, assets/search?sourceKey=!, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f1...)</span>
+                <span class="method-start">16261 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchby_AssetId(8, assets/search?sourceKey=, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756f16...)</span>
+                <span class="method-start">19107 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchby_AssetId(9, assets/search?sourceKey=abc, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c4066756...)</span>
+                <span class="method-start">22030 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchby_AssetId(10, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e3850016b410-11f7-43f8-ba3a-0d347392e385...)</span>
+                <span class="method-start">24999 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchby_AssetId(11, assets/search?sourceKey=0016b410&11f7&43f8&ba3a&0d347392e385, Business-Unit=power,Predix-Zone-Id...)</span>
+                <span class="method-start">27365 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchby_AssetId(12, assets/search?sourceKey=00*, Business-Unit=power,Predix-Zone-Id=6320dde5-5bfb-4d20-973c-3c406675...)</span>
+                <span class="method-start">29831 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchby_AssetId(13, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=Power,Predix-Zone-Id...)</span>
+                <span class="method-start">32293 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchby_AssetId(14, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=Power,Predix-Zone-I=...)</span>
+                <span class="method-start">34822 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchby_AssetId(15, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=ower,Predix-Zone-Id=...)</span>
+                <span class="method-start">37744 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchby_AssetId(16, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=power,Predix-Zone-Id...)</span>
+                <span class="method-start">40157 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchby_AssetId(17, assets/search?sourceKey=0016b410-11f7-43f8-ba3a-0d347392e385, Business-Unit=power,Predix-Zone-Id...)</span>
+                <span class="method-start">42816 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchby_AssetId(18, sites/search?sourceKey=0023d344-6e16-4ae3-9320-c84411bf78a8, Business-Unit=power,Predix-Zone-Id=...)</span>
+                <span class="method-start">45524 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">report</span>
+                <span class="method-start">48242 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
