@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<extentreports>
+  <configuration>
+    <theme>standard</theme>
+    <encoding>UTF-8</encoding>
+    <protocol>https</protocol>
+    <documentTitle>Automation Report</documentTitle>
+    <reportName>Regression Tests Result | </reportName>
+    <reportHeadline>DAP</reportHeadline>
+    <dateFormat>yyyy-MM-dd</dateFormat>
+    <timeFormat>HH:mm:ss</timeFormat>
+  </configuration>
+</extentreports>
